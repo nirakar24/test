@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="timer">Time Left: 03:00:00</div>
+    <form id="quizForm">
+        <div id="questionContainer">
+            <div id="questionImage"></div>
+            <div id="options"></div>
+        </div>
+        <div id="navigation">
+            <button type="button" id="prevButton" onclick="prevQuestion()">Previous</button>
+            <button type="button" id="nextButton" onclick="nextQuestion()">Next</button>
+        </div>
+        <button type="button" id="submitButton" onclick="submitQuiz()">Submit</button>
+    </form>
+    <div id="result" style="display:none;">
+        <h2>Quiz Results</h2>
+        <p id="totalAttempted"></p>
+        <p id="totalMarks"></p>
+        <button id="viewQuestionsButton" onclick="redirectToDrive()">View All Questions</button>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function redirectToDrive() {
+        window.location.href = "https://drive.google.com/drive/folders/1-bghoqAp-rlXVgj6tmIDxeGESxH2-R-P?usp=sharing"; // Replace with your actual Google Drive link
+    }
+    </script>
+
+</body>
+</html>
