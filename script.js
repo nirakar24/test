@@ -252,9 +252,7 @@ function submitQuiz() {
         document.body.removeChild(link);
     }
     
-    function redirectToDrive() {
-        window.location.href = "https://drive.google.com/drive/folders/1-bghoqAp-rlXVgj6tmIDxeGESxH2-R-P?usp=sharing"; // Replace with your actual Google Drive link
-    }
+    
     
     
 }
